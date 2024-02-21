@@ -1,0 +1,34 @@
+{
+  "version": 0,
+  "timeEvents": [
+    {
+      "name": "grassEnter",
+      "targetTime": 0.8755852060640416
+    },
+    {
+      "name": "grassExit",
+      "targetTime": 5.997959652901931
+    },
+    {
+      "name": "rename",
+      "targetTime": 7.456796817864443
+    },
+    {
+      "name": "hdEnter",
+      "targetTime": 11.348550898691908
+    },
+    {
+      "name": "hdExit",
+      "targetTime": 16.754086384699338
+    },
+    {
+      "name": "comparisonAppear",
+      "targetTime": 17.95061508963926
+    },
+    {
+      "name": "comparisonExit",
+      "targetTime": 23.29280467575408
+    }
+  ],
+  "seed": 620834017
+}

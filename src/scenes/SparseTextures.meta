@@ -1,0 +1,50 @@
+{
+  "version": 0,
+  "timeEvents": [
+    {
+      "name": "highlight",
+      "targetTime": 4.341869462966272
+    },
+    {
+      "name": "cardOut",
+      "targetTime": 6.143076214933568
+    },
+    {
+      "name": "physRamIn",
+      "targetTime": 6.643076214933568
+    },
+    {
+      "name": "virtRamIn",
+      "targetTime": 8.130043227280852
+    },
+    {
+      "name": "virtRamMany",
+      "targetTime": 9.820323794623027
+    },
+    {
+      "name": "imgDemo",
+      "targetTime": 10.720972998820583
+    },
+    {
+      "name": "arrowGo",
+      "targetTime": 13.4043969701446
+    },
+    {
+      "name": "catAppear",
+      "targetTime": 14.775276586946928
+    },
+    {
+      "name": "catSplit",
+      "targetTime": 16.04514497154302
+    },
+    {
+      "name": "catMove",
+      "targetTime": 17.54514497154302
+    },
+    {
+      "name": "catRemove",
+      "targetTime": 33.29799921937243
+    }
+  ],
+  "seed": 1017421930
+}
