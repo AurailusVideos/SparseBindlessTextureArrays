@@ -47,8 +47,8 @@ export default makeScene2D(function* (view) {
 
 		yield* waitFor(0.6);
 
-		videoRef().opacity(1);
-		videoRef().play();
+		// videoRef().opacity(1);
+		// videoRef().play();
 
 		yield* waitFor(0.3);
 
@@ -68,7 +68,7 @@ export default makeScene2D(function* (view) {
 
 		yield* waitUntil('ramIn');
 
-		videoRef().remove();
+		// videoRef().remove();
 	}
 
 	{

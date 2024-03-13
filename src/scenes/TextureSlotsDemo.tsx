@@ -1,7 +1,7 @@
 import { makeScene2D, Layout, Txt, Video } from '@motion-canvas/2d';
 import { Vector2, all, chain, createRef, makeRef, range, waitFor } from '@motion-canvas/core';
 
-import video from '../../videos/gamefootage.mp4'
+// import video from '../../videos/gamefootage.mp4'
 import { OutlinedBox } from '../components/OutlinedBox';
 
 export default makeScene2D(function* (view) {
@@ -17,7 +17,7 @@ export default makeScene2D(function* (view) {
 	view.fill('#111');
 	yield view.add(
 		<Layout ref={layoutRef} layout={true} width='100%' height='100%'>
-			<Video ref={videoRef} src={video}/>
+			{/* <Video ref={videoRef} src={video}/> */}
 
 			<Txt
 				ref={txtRef}
@@ -52,13 +52,13 @@ export default makeScene2D(function* (view) {
 	);
 
 
-	videoRef().seek(18);
-	videoRef().play();
-	videoRef().scale(1.1);
+	// videoRef().seek(18);
+	// videoRef().play();
+	// videoRef().scale(1.1);
 
 	yield* waitFor(10);
 
-	yield* videoRef().filters.blur(50, 1);
+	// yield* videoRef().filters.blur(50, 1);
 
 	yield* all(
 		chain(waitFor(0.1), txtRef().text('Texture Slots', 0.5)),
@@ -67,7 +67,7 @@ export default makeScene2D(function* (view) {
 	);
 
 	yield* waitFor(0.9);
-	videoRef().pause();
+	// videoRef().pause();
 
 	yield* waitFor(5);
 

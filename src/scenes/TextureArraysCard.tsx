@@ -1,7 +1,7 @@
 import { makeScene2D, Layout, Txt, Video } from '@motion-canvas/2d';
 import { Vector2, all, chain, createRef, createRefMap, easeOutQuad, easeOutQuint, makeRef, range, waitFor } from '@motion-canvas/core';
 
-import video from '../../videos/gamefootage.mp4'
+// import video from '../../videos/gamefootage.mp4'
 import { OutlinedBox } from '../components/OutlinedBox';
 
 export default makeScene2D(function* (view) {
@@ -16,10 +16,10 @@ export default makeScene2D(function* (view) {
 	view.fill('#111');
 	yield view.add(
 		<Layout ref={layoutRef} layout={true} width='100%' height='100%' cache>
-			<Video
+			{/* <Video
 				ref={videoRef}
 				src={video}
-			/>
+			/> */}
 			<Txt
 				ref={txtRefs.sub1}
 				layout={false}
@@ -122,9 +122,9 @@ export default makeScene2D(function* (view) {
 	);
 
 
-	videoRef().seek(62);
-	videoRef().play();
-	videoRef().scale(1.1);
+	// videoRef().seek(62);
+	// videoRef().play();
+	// videoRef().scale(1.1);
 
 	txtRefs.sub1().opacity(0);
 	txtRefs.sub2().opacity(0);
@@ -142,8 +142,8 @@ export default makeScene2D(function* (view) {
 
 	yield* waitFor(5);
 	yield* all(
-		videoRef().filters.blur(50, 1),
-		videoRef().filters.brightness(.85, 1)
+		// videoRef().filters.blur(50, 1),
+		// videoRef().filters.brightness(.85, 1)
 	);
 
 	yield* all(

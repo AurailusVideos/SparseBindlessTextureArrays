@@ -283,8 +283,8 @@ export default makeScene2D(function* (view) {
 		yield* shake(imageRef(), 0.5, 20);
 		yield* shake(imageRef(), 0.5, 40);
 
-		videoRef().opacity(1);
-		videoRef().play();
+		// videoRef().opacity(1);
+		// videoRef().play();
 
 		yield* shake(imageRef(), 0.83, 200);
 		imageRef().opacity(0);

@@ -7,7 +7,7 @@ import img_switch from '../../images/switch.webp'
 import img_gamecube from '../../images/gamecube.png'
 import img_cellphone from '../../images/cellphone.png'
 
-import video from '../../videos/returnalfootage.mp4'
+// import video from '../../videos/returnalfootage.mp4'
 
 export default makeScene2D(function* (view) {
 	const layoutRef = createRef<Layout>();
@@ -19,7 +19,7 @@ export default makeScene2D(function* (view) {
 		view.fill('#111');
 		yield view.add(
 			<Layout ref={layoutRef} width='100%' height='100%'>
-				<Video ref={videoRef} src={video} width='100%' height='100%'/>
+				{/* <Video ref={videoRef} src={video} width='100%' height='100%'/> */}
 				{[ img_gpu, img_genesis, img_switch, img_gamecube, img_cellphone ].map((img, i) => {
 					return <Img
 						src={img}
@@ -31,8 +31,8 @@ export default makeScene2D(function* (view) {
 			</Layout>
 		);
 
-		videoRef().seek(6 * 60);
-		videoRef().play();
+		// videoRef().seek(6 * 60);
+		// videoRef().play();
 
 		yield all(
 			imageRefs[0].y(-200).y(100, 3, linear),
